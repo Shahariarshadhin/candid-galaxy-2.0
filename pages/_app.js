@@ -1,8 +1,9 @@
 import "@/styles/globals.css";
-// import "react-photo-view/dist/react-photo-view.css";
+import "react-photo-view/dist/react-photo-view.css";
 
 import { useEffect, useRef } from "react";
 import { useRouter } from "next/router";
+import { PhotoProvider } from "react-photo-view";
 // import LoadingBar from "react-top-loading-bar";
 
 // import { SessionProvider, useSession, signOut } from "next-auth/react";
@@ -38,10 +39,7 @@ export default function App({
   return (
     // <SnackbarProvider maxSnack={3}>
     //   <LoadingBar color="#2F7CE3" ref={ref} />
-    //   <PhotoProvider>
-        getLayout(
-        <Component {...pageProps} />)
-    //   </PhotoProvider>
+    <PhotoProvider>{getLayout(<Component {...pageProps} />)}</PhotoProvider>
     // </SnackbarProvider>
   );
 }

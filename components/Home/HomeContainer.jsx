@@ -1,7 +1,10 @@
+import PhotoGalleryContainer from "./photoGallery/PhotoGalleryContainer"
 
 const HomeContainer = () => {
   return (
-    <div>HomeContainer</div>
+    <div>
+      <PhotoGalleryContainer/>
+    </div>
   )
 }
 
